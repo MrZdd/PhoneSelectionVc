@@ -15,10 +15,10 @@
 		80317CDB1DBA106C003B2105 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80317CD91DBA106C003B2105 /* LaunchScreen.storyboard */; };
 		80317CE61DBA106C003B2105 /* CH_GetContactInforTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 80317CE51DBA106C003B2105 /* CH_GetContactInforTests.m */; };
 		80317CF11DBA106C003B2105 /* CH_GetContactInforUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 80317CF01DBA106C003B2105 /* CH_GetContactInforUITests.m */; };
-		80317D031DBA10C8003B2105 /* UIViewController+getContactInfor.m in Sources */ = {isa = PBXBuildFile; fileRef = 80317D021DBA10C8003B2105 /* UIViewController+getContactInfor.m */; };
 		80317D071DBA1147003B2105 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80317D061DBA1147003B2105 /* AddressBook.framework */; };
 		80317D091DBA114E003B2105 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80317D081DBA114E003B2105 /* AddressBookUI.framework */; };
 		80317D0B1DBA1159003B2105 /* ContactsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80317D0A1DBA1159003B2105 /* ContactsUI.framework */; };
+		FA469ACE1F7F4B0E001FBC08 /* UIViewController+getContactInfor.m in Sources */ = {isa = PBXBuildFile; fileRef = FA469ACD1F7F4B0E001FBC08 /* UIViewController+getContactInfor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,11 +55,11 @@
 		80317CEC1DBA106C003B2105 /* CH_GetContactInforUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CH_GetContactInforUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		80317CF01DBA106C003B2105 /* CH_GetContactInforUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CH_GetContactInforUITests.m; sourceTree = "<group>"; };
 		80317CF21DBA106C003B2105 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		80317D011DBA10C8003B2105 /* UIViewController+getContactInfor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+getContactInfor.h"; sourceTree = "<group>"; };
-		80317D021DBA10C8003B2105 /* UIViewController+getContactInfor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+getContactInfor.m"; sourceTree = "<group>"; };
 		80317D061DBA1147003B2105 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		80317D081DBA114E003B2105 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
 		80317D0A1DBA1159003B2105 /* ContactsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ContactsUI.framework; path = System/Library/Frameworks/ContactsUI.framework; sourceTree = SDKROOT; };
+		FA469ACC1F7F4B0E001FBC08 /* UIViewController+getContactInfor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+getContactInfor.h"; sourceTree = "<group>"; };
+		FA469ACD1F7F4B0E001FBC08 /* UIViewController+getContactInfor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+getContactInfor.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +93,7 @@
 		80317CBF1DBA106C003B2105 = {
 			isa = PBXGroup;
 			children = (
+				FA469ACB1F7F4B0E001FBC08 /* PhoneSelect */,
 				80317CCA1DBA106C003B2105 /* CH_GetContactInfor */,
 				80317CE41DBA106C003B2105 /* CH_GetContactInforTests */,
 				80317CEF1DBA106C003B2105 /* CH_GetContactInforUITests */,
@@ -114,8 +115,6 @@
 		80317CCA1DBA106C003B2105 /* CH_GetContactInfor */ = {
 			isa = PBXGroup;
 			children = (
-				80317D011DBA10C8003B2105 /* UIViewController+getContactInfor.h */,
-				80317D021DBA10C8003B2105 /* UIViewController+getContactInfor.m */,
 				80317CCE1DBA106C003B2105 /* AppDelegate.h */,
 				80317CCF1DBA106C003B2105 /* AppDelegate.m */,
 				80317CD11DBA106C003B2105 /* ViewController.h */,
@@ -163,6 +162,15 @@
 				80317D061DBA1147003B2105 /* AddressBook.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA469ACB1F7F4B0E001FBC08 /* PhoneSelect */ = {
+			isa = PBXGroup;
+			children = (
+				FA469ACC1F7F4B0E001FBC08 /* UIViewController+getContactInfor.h */,
+				FA469ACD1F7F4B0E001FBC08 /* UIViewController+getContactInfor.m */,
+			);
+			path = PhoneSelect;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,7 +310,7 @@
 				80317CD31DBA106C003B2105 /* ViewController.m in Sources */,
 				80317CD01DBA106C003B2105 /* AppDelegate.m in Sources */,
 				80317CCD1DBA106C003B2105 /* main.m in Sources */,
-				80317D031DBA10C8003B2105 /* UIViewController+getContactInfor.m in Sources */,
+				FA469ACE1F7F4B0E001FBC08 /* UIViewController+getContactInfor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
